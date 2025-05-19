@@ -52,6 +52,8 @@ public class LoginPage extends BaseClass {
 
 
     public void clickLoginButton() {
+    	
+    	
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10)); // ✅ updated for Selenium 4
 
         // Wait for the login button to be clickable

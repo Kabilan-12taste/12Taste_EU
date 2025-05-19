@@ -31,7 +31,7 @@ public class LoginWithValid extends BaseClass {
 
     @When("the user clicks the login button")
     public void the_user_clicks_the_login_button() {
-        login.clickLogin();
+        login.clickLoginButton();
     }
 
     @Then("the user should be redirected to the dashboard")
