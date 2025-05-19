@@ -8,7 +8,7 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "src/test/resources/FeatureFiles/LoginwithValid", // adjust if needed
+    features = "C:\\Users\\Lenovo\\eclipse-workspace\\12TasteEU\\src\\test\\resources\\FeatureFiles\\LoginwithValid.feature", // adjust if needed
     glue = "org.stepdefinitions",
     tags = "not @skip",
     plugin = {
