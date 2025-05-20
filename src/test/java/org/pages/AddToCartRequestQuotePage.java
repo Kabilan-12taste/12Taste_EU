@@ -16,7 +16,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AddToCartRequestQuotePage extends BaseClass {
 	private By addToCartButton = By
-			.xpath("(//button [@type='submit'])[4]");
+			.xpath("(//button[text()='Add to cart']");
 	private By increaseQuantityButton = By.xpath("//a[@class='qtyBtn plus']");
 	private By decreaseQualityButton = By.xpath("//a[@class='qtyBtn minus']");
 	private By confirmationMessage = By.xpath("//div[contains(@class, 'woocommerce-message')]");
@@ -24,7 +24,7 @@ public class AddToCartRequestQuotePage extends BaseClass {
 	private By downloadlist = By.id("ywraq-list-to-pdf");
 	private By updatelist = By.xpath("//input [@value = 'Update List']");
 
-	private By productclick = By.xpath("(//span[@class='product-title'])[1]");
+	private By productclick = By.xpath("//button[contains(@class, 'single_add_to_cart_button') and text()='Add to cart']");
 
 
 	private By searchfiled = By.id("dgwt-wcas-search-input-3");
@@ -39,7 +39,7 @@ public class AddToCartRequestQuotePage extends BaseClass {
 	}
 
 	public void clickAddToCart() {
-		//clickElement(driver.findElement(addToCartButton));
+		clickElement(driver.findElement(addToCartButton));
 	}
 
 	public String getConfirmationMessage() {

@@ -1,11 +1,15 @@
 package org.stepdefinitions;
 
 import java.awt.AWTException;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import java.time.Duration;
+import org.openqa.selenium.JavascriptExecutor;
 
 import org.base.BaseClass;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.pages.AddToCartRequestQuotePage;
 import org.pages.SearchPage;
 
@@ -26,8 +30,8 @@ public class AddToCartRequestQuoteSteps extends BaseClass {
 		login.the_user_enters_a_valid_email();
 		login.the_user_enters_a_valid_password();
 		login.the_user_clicks_the_login_button();
-		addtocartpage.search("Milk");
-		addtocartpage.productclick();
+		addtocartpage.search("payment test product");
+		// addtocartpage.productclick();
 	}
 
 	@When("User increase the quantity using the plus button")
@@ -36,10 +40,25 @@ public class AddToCartRequestQuoteSteps extends BaseClass {
 	}
 
 	@When("User click on the Add to Cart button")
-	public void user_click_on_the_Add_to_Cart_button() {
-		//addtocartpage.clickAddToCart();
-		WebElement clck = driver.findElement(By.xpath("(//button [@type='submit'])[4]"));
-		clck.click();
+	public void user_click_on_the_Add_to_Cart_button() throws InterruptedException {
+		// addtocartpage.clickAddToCart();
+//		WebElement clck = driver.findElement(By.xpath("//button[text()='Add to cart']"));
+//		clck.click();
+//		
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		// Locate the Add to Cart button
+		WebElement addToCartButton = wait.until(ExpectedConditions.elementToBeClickable(
+				By.xpath("//button[contains(@class, 'single_add_to_cart_button') and text()='Add to cart']")));
+
+		// Scroll into view and add buffer in case a sticky header overlaps
+		((JavascriptExecutor) driver)
+				.executeScript("arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});", addToCartButton);
+
+		// Optional: pause briefly for layout adjustments
+		Thread.sleep(500);
+
+		// Use JavaScript to perform the click to avoid interception
+		((JavascriptExecutor) driver).executeScript("arguments[0].click();", addToCartButton);
 	}
 
 	@Then("User should see a confirmation message with the product name")
@@ -50,7 +69,7 @@ public class AddToCartRequestQuoteSteps extends BaseClass {
 
 	@Then("the product should be added to the cart")
 	public void the_product_should_be_added_to_the_cart() {
-		addtocartpage.isCartCountUpdated("2");
+		addtocartpage.isCartCountUpdated("1");
 	}
 
 //	@When("User click on the Request a Quote button")

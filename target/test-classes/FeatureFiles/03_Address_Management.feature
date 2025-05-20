@@ -1,4 +1,4 @@
-Feature: Address Management for Billing and Shipping
+Feature: 03_Address Management for Billing and Shipping
 
   Scenario: Add/Edit a Billing address and ensure successful update
     Given User is logged in to the application and is redirected to the dashboard

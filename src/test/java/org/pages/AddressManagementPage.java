@@ -13,14 +13,13 @@ public class AddressManagementPage extends BaseClass {
 
 	// Locator of Address
 
-	private By address = By
-			.xpath("//a[@href='https://www.12taste.com/staging-eu-11-04-2025/my-account/edit-address/' and contains(@class, 'nav-link')]");
+	private By address = By.xpath("//*[@id=\"top-tab\"]/li[5]/a");
 
-	private By edit_billing = By.xpath(
-			"//a[@href='https://www.12taste.com/staging-eu-11-04-2025/my-account/edit-address/billing/' and contains(@class, 'edit')]");
+	private By edit_billing = By
+			.xpath("//a[contains(@href, '/edit-address/billing') and contains(text(), 'Edit Billing')]");
 
-	private By edit_shipping = By.xpath(
-			"//a[@href='https://www.12taste.com/staging-eu-11-04-2025/my-account/edit-address/shipping/' and contains(@class, 'edit')]");
+	private By edit_shipping = By
+			.xpath("//a[contains(@href, '/edit-address/shipping') and normalize-space()='Edit Shipping address']");
 	// Locators for Billing Address Form
 	private By billingFirstname = By.id("billing_first_name");
 	private By billingLastname = By.id("billing_last_name");
@@ -46,13 +45,12 @@ public class AddressManagementPage extends BaseClass {
 	private By shipping_country = By.id("shipping_country");
 	private By shipping_streetaddress1 = By.id("shipping_address_1");
 	private By shipping_streetaddress2 = By.id("shipping_address_2");
-	private By shipping_postcode= By.id("shipping_postcode");
+	private By shipping_postcode = By.id("shipping_postcode");
 	private By shipping_city = By.id("shipping_city");
 
 	// Method to Fill Billing Address
 	public void fillBillingAddress(String first_name, String last_name, String company_name, String country,
-			String street_add_row1, String street_add_row2,  String ZIP, String city, String phone_no,
-			String email) {
+			String street_add_row1, String street_add_row2, String ZIP, String city, String phone_no, String email) {
 
 		enterText(driver.findElement(billingFirstname), first_name);
 		enterText(driver.findElement(billingLastname), last_name);
@@ -68,9 +66,8 @@ public class AddressManagementPage extends BaseClass {
 
 	}
 
-	public void fillShippingAddress(String first_name,
-			String last_name, String company_name, String country, String street_add_row1, String street_add_row2,
-			String postcode, String city) {
+	public void fillShippingAddress(String first_name, String last_name, String company_name, String country,
+			String street_add_row1, String street_add_row2, String postcode, String city) {
 
 		enterText(driver.findElement(shipping_firstname), first_name);
 		enterText(driver.findElement(shipping_lastname), last_name);

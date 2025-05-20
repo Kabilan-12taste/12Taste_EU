@@ -8,7 +8,19 @@ import io.cucumber.junit.CucumberOptions;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-    features = "C:\\Users\\Lenovo\\eclipse-workspace\\12TasteEU\\src\\test\\resources\\FeatureFiles\\LoginwithValid.feature", // adjust if needed
+		features = {
+		        "src/test/resources/FeatureFiles/01_Login.feature",
+		        "src/test/resources/FeatureFiles/02_AccountDetails.feature",
+		        "src/test/resources/FeatureFiles/03_Address_Management.feature",
+		        "src/test/resources/FeatureFiles/04_Search.feature",
+		        "src/test/resources/FeatureFiles/05_AddToCart.feature",
+		        "src/test/resources/FeatureFiles/06_Quote.feature",
+		        "src/test/resources/FeatureFiles/07_PaymentProcess.feature",
+		        "src/test/resources/FeatureFiles/08_PasswordReset.feature",
+		        "src/test/resources/FeatureFiles/09_Logout.feature",
+		        "src/test/resources/FeatureFiles/10_Registration.feature",
+		        "src/test/resources/FeatureFiles/11_SearchInvalid.feature"
+		    },
     glue = "org.stepdefinitions",
     tags = "not @skip",
     plugin = {

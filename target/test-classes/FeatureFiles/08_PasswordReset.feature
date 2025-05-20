@@ -1,4 +1,4 @@
-Feature: To Check the 1-2 Taste Application Password Reset Functionality
+Feature: 08_To Check the 1-2 Taste Application Password Reset Functionality
 
   Scenario: Verify user can  set a new password with lost your password option
     Given the user clicks on Lost your password?

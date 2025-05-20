@@ -1,4 +1,4 @@
-Feature: To Check the 1-2 Taste Application Login Functionality
+Feature: 01_To Check the 1-2 Taste EU Application Login Functionality
 
   Scenario: Verify user can log in with valid credentials
     Given the user is on the login page

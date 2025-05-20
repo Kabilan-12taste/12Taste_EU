@@ -1,4 +1,4 @@
-Feature: To Check the 1-2 Taste Application Log Out Functionality
+Feature: 09_To Check the 1-2 Taste Application Log Out Functionality
 
   Scenario: Verify user can log out with valid credentials
     Given the user logs into the application

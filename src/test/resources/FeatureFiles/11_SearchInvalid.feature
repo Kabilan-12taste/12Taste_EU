@@ -1,4 +1,4 @@
-Feature: To Check the 1-2 Taste Application Search Functionality
+Feature: 11_To Check the 1-2 Taste Application Search Functionality
 
   Scenario: Search for an invalid product name
     Given User on the search page

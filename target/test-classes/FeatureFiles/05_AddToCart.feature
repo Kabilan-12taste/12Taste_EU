@@ -1,4 +1,4 @@
-Feature: To Check then 1-2 taste Application Add to Cart Functionality
+Feature: 05_To Check then 1-2 taste Application Add to Cart Functionality
 
   Scenario: Add a product to the cart
     Given User navigate to the product listing page

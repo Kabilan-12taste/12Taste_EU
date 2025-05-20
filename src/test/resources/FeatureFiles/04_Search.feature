@@ -1,4 +1,4 @@
-Feature: To Check the 1-2 Taste Application Search Functionality
+Feature: 04_To Check the 1-2 Taste Application Search Functionality
 
   Scenario: Search for a valid product and apply random filters
     Given User is on the search page

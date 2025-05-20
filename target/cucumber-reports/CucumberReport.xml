@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="8.191" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="To Check the 1-2 Taste Application Login Functionality" name="Verify user can log in with valid credentials" time="8.044">
+<testsuite name="Cucumber" time="9.311" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="01_To Check the 1-2 Taste EU Application Login Functionality" name="Verify user can log in with valid credentials" time="9.184">
 <system-out><![CDATA[
 Given the user is on the login page.........................................passed
 When the user enters a valid email..........................................passed

@@ -1,4 +1,4 @@
-Feature: To Check the 1-2 Taste Application New Registartion Functionality
+Feature: 10_To Check the 1-2 Taste Application New Registartion Functionality
 
   Scenario: Verify user can Registartion with his details
     Given the user is on the registration page

@@ -1,5 +1,4 @@
-# update_account.feature
-Feature: To Check the 1-2 Taste site Update account information in "My Account" section
+Feature: 02_To Check the 1-2 Taste site Update account information in "My Account" section
 
   Scenario: User successfully updates account details
     Given User should logged in to the application

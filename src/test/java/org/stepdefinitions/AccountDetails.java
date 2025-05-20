@@ -17,7 +17,7 @@ public class AccountDetails extends BaseClass {
 	@Given("User should logged in to the application")
 	public void user_should_logged_in_to_the_application() {
 		setupBrowser();
-		openUrl("https://www.12taste.com/staging-eu-11-04-2025/my-account/");
+		openUrl("https://www.12taste.com/my-account/");
 		login.the_user_enters_a_valid_email();
 		login.the_user_enters_a_valid_password();
 		login.the_user_clicks_the_login_button();
@@ -51,7 +51,7 @@ public class AccountDetails extends BaseClass {
 	@Given("User logged in to the application")
 	public void user_logged_in_to_the_application() {
 		setupBrowser();
-		openUrl("https://www.12taste.com/staging-eu-11-04-2025/my-account/");
+		openUrl("https://www.12taste.com/my-account/");
 		login.the_user_enters_a_valid_email();
 		login.the_user_enters_a_valid_password();
 		login.the_user_clicks_the_login_button();
@@ -87,7 +87,7 @@ public class AccountDetails extends BaseClass {
 	@Given("User log in to the application")
 	public void user_login_to_the_application() {
 		setupBrowser();
-		openUrl("https://www.12taste.com/staging-eu-11-04-2025/my-account/");
+		openUrl("https://www.12taste.com/my-account/");
 		login.the_user_enters_a_valid_email();
 		
 		login.the_user_enters_a_valid_password();
