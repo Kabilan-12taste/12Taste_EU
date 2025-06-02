@@ -50,9 +50,9 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
+                37,
                 5,
-                0,
-                0,
+                16,
                 0,
                 0
             ],
@@ -93,7 +93,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 5) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 58) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -106,8 +106,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                1,
-                0
+                6,
+                5
             ],
             backgroundColor: [
                 "#00B000",
@@ -140,7 +140,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 11) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -153,8 +153,8 @@ $(document).ready(function() {
     var chartData = {
         datasets: [{
             data: [
-                   1,
-                   0
+                   3,
+                   5
                ],
                backgroundColor: [
                 "#00B000",
@@ -187,7 +187,7 @@ $(document).ready(function() {
                         var allData = data.datasets[tooltipItem.datasetIndex].data;
                         var tooltipLabel = data.labels[tooltipItem.index];
                         var tooltipData = allData[tooltipItem.index];
-                        var tooltipPercentage = Math.round(10000 * tooltipData / 1) / 100;
+                        var tooltipPercentage = Math.round(10000 * tooltipData / 8) / 100;
                         return tooltipLabel + ": " + tooltipData + " (" + tooltipPercentage + "%)";
                     }
                 }
@@ -228,7 +228,7 @@ $(document).ready(function() {
   <tbody>
     <tr class="info">
       <td>12Taste EU</td>
-      <td>20 May 2025, 17:36</td>
+      <td>26 May 2025, 18:33</td>
     </tr>
   </tbody>
 </table>
@@ -354,41 +354,160 @@ $(document).ready(function() {
         <td >0</td>
         <td class="total">1</td>
 
-        <td class="duration" data-value="9166764200">9.166</td>
+        <td class="duration" data-value="10352977300">10.352</td>
         <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_1_2364177833.html">02_To Check the 1-2 Taste site Update account information in &quot;My Account&quot; section</a></td>
+
+        <td      class="passed"    >8</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">12</td>
+
+        <td  class="passed"    >2</td>
+        <td  class="failed"    >1</td>
+        <td class="total">3</td>
+
+        <td class="duration" data-value="30055782100">30.055</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_2_4182734785.html">03_Address Management for Billing and Shipping</a></td>
+
+        <td      class="passed"    >6</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">10</td>
+
+        <td  class="passed"    >1</td>
+        <td  class="failed"    >1</td>
+        <td class="total">2</td>
+
+        <td class="duration" data-value="21852658300">21.852</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_3_3133052346.html">04_To Check the 1-2 Taste Application Search Functionality</a></td>
+
+        <td      class="passed"    >1</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >6</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">8</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="2241021900">2.241</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_4_2854286361.html">05_To Check then 1-2 taste Application Add to Cart Functionality</a></td>
+
+        <td      class="passed"    >5</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">5</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="28153013600">28.153</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_5_2756155412.html">08_To Check the 1-2 Taste Application Password Reset Functionality</a></td>
+
+        <td      class="passed"    >2</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >3</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">6</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="183132090800">3:3.132</td>
+        <td class="failed">Failed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_6_3598751991.html">09_To Check the 1-2 Taste Application Log Out Functionality</a></td>
+
+        <td      class="passed"    >6</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">6</td>
+
+        <td  class="passed"    >1</td>
+        <td >0</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="12949761600">12.949</td>
+        <td class="passed">Passed</td>
+      </tr>
+      <tr>
+        <td class="tagname"><a href="report-feature_7_584184400.html">10_To Check the 1-2 Taste Application New Registartion Functionality</a></td>
+
+        <td      class="passed"    >4</td>
+        <td      class="failed"    >1</td>
+        <td     class="skipped"   >1</td>
+        <td >0</td>
+        <td >0</td>
+        <td class="total">6</td>
+
+        <td >0</td>
+        <td  class="failed"    >1</td>
+        <td class="total">1</td>
+
+        <td class="duration" data-value="4077258300">4.077</td>
+        <td class="failed">Failed</td>
       </tr>
   </tbody>
 
   <tfoot class="total">
     <tr>
       <td></td>
+      <td>37</td>
       <td>5</td>
+      <td>16</td>
       <td>0</td>
       <td>0</td>
-      <td>0</td>
-      <td>0</td>
+      <td>58</td>
+
+      <td>6</td>
       <td>5</td>
+      <td>11</td>
 
-      <td>1</td>
-      <td>0</td>
-      <td>1</td>
-
-      <td class="duration">9.166</td>
-      <td>1</td>
+      <td class="duration">4:52.814</td>
+      <td>8</td>
     </tr>
     <tr>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
-      <td>0.00%</td>
+      <td>63.79%</td>
+      <td>8.62%</td>
+      <td>27.59%</td>
       <td>0.00%</td>
       <td>0.00%</td>
       <td></td>
-      <td>100.00%</td>
-      <td>0.00%</td>
+      <td>54.55%</td>
+      <td>45.45%</td>
       <td></td>
       <td></td>
-      <td>100.00%</td>
+      <td>37.50%</td>
     </tr>
   </tfoot>
 </table>

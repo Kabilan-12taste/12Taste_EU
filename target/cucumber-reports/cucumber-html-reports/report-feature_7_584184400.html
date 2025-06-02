@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: 01_To Check the 1-2 Taste EU Application Login Functionality</title>
+<title>Cucumber Reports  - Feature: 10_To Check the 1-2 Taste Application New Registartion Functionality</title>
 
 </head>
 <body>
@@ -126,20 +126,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">01_To Check the 1-2 Taste EU Application Login Functionality</td>
-          <td      class="passed"    >5</td>
+          <td class="tagname">10_To Check the 1-2 Taste Application New Registartion Functionality</td>
+          <td      class="passed"    >4</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >1</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">5</td>
+          <td class="total">6</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="10352977300">10.352</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="4077258300">4.077</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,9 +171,9 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">01_To Check the 1-2 Taste EU Application Login Functionality</span>
+  <span class="name">10_To Check the 1-2 Taste Application New Registartion Functionality</span>
 
 
 </div>
@@ -189,14 +189,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.352</span>
+  <span class="lead-duration duration">4.077</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify user can log in with valid credentials</span>
+  <span class="name">Verify user can Registartion with his details</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -205,16 +205,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -224,15 +224,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">the user is on the login page</span>
+  <span class="name">the user is on the registration page</span>
 
-  <span class="lead-duration duration">4.211</span>
+  <span class="lead-duration duration">1.801</span>
 
 </div>
 
@@ -257,36 +257,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-When passed">
   <span class="keyword indention">When</span>
-  <span class="name">the user enters a valid email</span>
+  <span class="name">the user enters as first name</span>
 
-  <span class="lead-duration duration">1.371</span>
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
-      <div class="step">
-
-
-<div class="brief step-name-And passed">
-  <span class="keyword indention">And</span>
-  <span class="name">the user enters a valid password</span>
-
-  <span class="lead-duration duration">0.175</span>
+  <span class="lead-duration duration">0.826</span>
 
 </div>
 
@@ -311,9 +284,9 @@ $(document).ready(function() {
 
 <div class="brief step-name-And passed">
   <span class="keyword indention">And</span>
-  <span class="name">the user clicks the login button</span>
+  <span class="name">the user enters last name</span>
 
-  <span class="lead-duration duration">4.569</span>
+  <span class="lead-duration duration">0.112</span>
 
 </div>
 
@@ -336,11 +309,101 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-And passed">
+  <span class="keyword indention">And</span>
+  <span class="name">the user enters as email</span>
+
+  <span class="lead-duration duration">0.089</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And failed">
+  <span class="keyword indention">And</span>
+  <span class="name">the user clicks the register button</span>
+
+  <span class="lead-duration duration">1.247</span>
+
+</div>
+
+
+
+
+
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>org.openqa.selenium.ElementClickInterceptedException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary rounded-pill btn-lg w-100 woocommerce-Button woocommerce-button button woocommerce-form-register__submit&quot; name=&quot;register&quot; value=&quot;...&quot;&gt;Register&lt;/button&gt; is not clickable at point (1076, 671). Other element would receive the click: &lt;div class=&quot;form-group col-12 mb-0&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a71f6715e1310fbd191c96a999031b48, clickElement {id=f.508A1D380D7409198A3476DEC3CEC1B0.d.703C5A8514C1CBE6DE9F7D7CCF84278D.e.31}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54220}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54220/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (a71f6715e1310fbd191c96a999031b48)] -&gt; name: register]
+Session ID: a71f6715e1310fbd191c96a999031b48
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.base.BaseClass.clickElement(BaseClass.java:50)
+	at org.pages.RegisterNewUser.clickRegisterButton(RegisterNewUser.java:35)
+	at org.stepdefinitions.RegistrationNewValid.the_user_clicks_the_register_button(RegistrationNewValid.java:40)
+	at &#10045;.the user clicks the register button(file:///C:/Users/Lenovo/eclipse-workspace/12TasteEU/src/test/resources/FeatureFiles/10_Registration.feature:8)
+</pre>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">the user should be redirected to the dashboard</span>
+  <span class="name">the user should be redirected to the confirmation page</span>
 
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 

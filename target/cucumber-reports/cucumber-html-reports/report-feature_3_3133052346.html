@@ -41,7 +41,7 @@ $(document).ready(function() {
 
 
 
-<title>Cucumber Reports  - Feature: 01_To Check the 1-2 Taste EU Application Login Functionality</title>
+<title>Cucumber Reports  - Feature: 04_To Check the 1-2 Taste Application Search Functionality</title>
 
 </head>
 <body>
@@ -126,20 +126,20 @@ $(document).ready(function() {
 
         <tbody>
         <tr>
-          <td class="tagname">01_To Check the 1-2 Taste EU Application Login Functionality</td>
-          <td      class="passed"    >5</td>
+          <td class="tagname">04_To Check the 1-2 Taste Application Search Functionality</td>
+          <td      class="passed"    >1</td>
+          <td      class="failed"    >1</td>
+          <td     class="skipped"   >6</td>
           <td >0</td>
           <td >0</td>
-          <td >0</td>
-          <td >0</td>
-          <td class="total">5</td>
+          <td class="total">8</td>
 
-          <td  class="passed"    >1</td>
           <td >0</td>
+          <td  class="failed"    >1</td>
           <td class="total">1</td>
 
-          <td class="duration" data-value="10352977300">10.352</td>
-          <td class="passed">Passed</td>
+          <td class="duration" data-value="2241021900">2.241</td>
+          <td class="failed">Failed</td>
         </tr>
         </tbody>
 
@@ -171,9 +171,9 @@ $(document).ready(function() {
 </div>
 
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Feature</span>
-  <span class="name">01_To Check the 1-2 Taste EU Application Login Functionality</span>
+  <span class="name">04_To Check the 1-2 Taste Application Search Functionality</span>
 
 
 </div>
@@ -189,14 +189,14 @@ $(document).ready(function() {
 </div>
 
 
-  <span class="lead-duration duration">10.352</span>
+  <span class="lead-duration duration">2.241</span>
 
 
-  <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
+  <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Scenario</span>
-  <span class="name">Verify user can log in with valid credentials</span>
+  <span class="name">Search for a valid product and apply random filters</span>
 
 
      <i class="chevron fa fa-fw"></i>
@@ -205,16 +205,16 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details ">
+  <div id="element-1" class="collapse collapsable-details  in ">
 
 
 
 
 
 <div class="steps inner-level">
-  <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-2">
+  <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-2">
 
-<div class="brief passed">
+<div class="brief failed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
 
@@ -224,15 +224,15 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-2" class="inner-level collapse collapsable-details ">
+  <div id="steps-2" class="inner-level collapse collapsable-details  in ">
       <div class="step">
 
 
 <div class="brief step-name-Given passed">
   <span class="keyword indention">Given</span>
-  <span class="name">the user is on the login page</span>
+  <span class="name">User is on the search page</span>
 
-  <span class="lead-duration duration">4.211</span>
+  <span class="lead-duration duration">2.207</span>
 
 </div>
 
@@ -255,11 +255,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-When passed">
+<div class="brief step-name-When failed">
   <span class="keyword indention">When</span>
-  <span class="name">the user enters a valid email</span>
+  <span class="name">User searches for a valid product</span>
 
-  <span class="lead-duration duration">1.371</span>
+  <span class="lead-duration duration">0.033</span>
 
 </div>
 
@@ -267,6 +267,42 @@ $(document).ready(function() {
 
 
 
+
+  <div class="inner-level">
+    <div class="message indention">
+      <div data-toggle="collapse" class=" collapsable-control" data-target="#msg-3">
+          <a>org.openqa.selenium.ElementNotInteractableException:</a>
+      </div>
+      <div id="msg-3" class="collapse collapsable-details  in ">
+        <pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=136.0.7103.114)
+Build info: version: '4.21.0', revision: '79ed462ef4'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [38e32a26867af5d1b3354c4f0579f145, clearElement {id=f.2A2F309B96AEE2EBD265311083EC7F3B.d.1A30011EA32BBC497EA2AE8C3F1800AA.e.4}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 136.0.7103.114, chrome: {chromedriverVersion: 136.0.7103.113 (76fa3c17824..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:53702}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:53702/devtoo..., se:cdpVersion: 136.0.7103.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (38e32a26867af5d1b3354c4f0579f145)] -&gt; xpath: //input[contains(@class, 'dgwt-wcas-search-input')]]
+Session ID: 38e32a26867af5d1b3354c4f0579f145
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.clear(RemoteWebElement.java:129)
+	at org.base.BaseClass.enterText(BaseClass.java:55)
+	at org.pages.SearchPage.search(SearchPage.java:24)
+	at org.stepdefinitions.SearchSteps.user_searches_for_a_valid_product(SearchSteps.java:21)
+	at &#10045;.User searches for a valid product(file:///C:/Users/Lenovo/eclipse-workspace/12TasteEU/src/test/resources/FeatureFiles/04_Search.feature:5)
+</pre>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -282,11 +318,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
-  <span class="name">the user enters a valid password</span>
+  <span class="name">User selects random one from Application Area</span>
 
-  <span class="lead-duration duration">0.175</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -309,11 +345,11 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-And passed">
+<div class="brief step-name-And skipped">
   <span class="keyword indention">And</span>
-  <span class="name">the user clicks the login button</span>
+  <span class="name">User selects Best Selling from Default Sorting</span>
 
-  <span class="lead-duration duration">4.569</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 
@@ -336,11 +372,92 @@ $(document).ready(function() {
       <div class="step">
 
 
-<div class="brief step-name-Then passed">
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User selects random Dietary Certification filters</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User selects random Labels &amp; Marks filters</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-And skipped">
+  <span class="keyword indention">And</span>
+  <span class="name">User applies the filters</span>
+
+  <span class="lead-duration duration">0.000</span>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </div>
+      <div class="step">
+
+
+<div class="brief step-name-Then skipped">
   <span class="keyword indention">Then</span>
-  <span class="name">the user should be redirected to the dashboard</span>
+  <span class="name">User should see relevant search results</span>
 
-  <span class="lead-duration duration">0.024</span>
+  <span class="lead-duration duration">0.000</span>
 
 </div>
 

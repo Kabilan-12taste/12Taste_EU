@@ -1,0 +1,5 @@
+file:src/test/resources/FeatureFiles/02_AccountDetails.feature:3
+file:src/test/resources/FeatureFiles/08_PasswordReset.feature:3
+file:src/test/resources/FeatureFiles/10_Registration.feature:3
+file:src/test/resources/FeatureFiles/04_Search.feature:3
+file:src/test/resources/FeatureFiles/03_Address_Management.feature:3
