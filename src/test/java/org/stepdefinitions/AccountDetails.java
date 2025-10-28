@@ -27,7 +27,7 @@ public class AccountDetails extends BaseClass {
 
 	@When("User enter new data with first name,last name, display name, email address, new password, and confirm password")
 	public void user_enter_new_data_with_first_name_last_name_display_name_email_address_new_password_and_confirm_pass() {
-		acc.enterNewAccountDetails("DEV", "COMP", "DEV COMP", "test_email@12taste.com", "test_email@12taste.com", "test_email@12taste.com",
+		acc.enterNewAccountDetails("Test", "Test", "Test", "test_email@12taste.com", "test_email@12taste.com", "test_email@12taste.com",
 				"test_email@12taste.com");
 	}
 
@@ -61,7 +61,7 @@ public class AccountDetails extends BaseClass {
 
 	@When("User enter new data with first name,last name, display name, mail address, new password, and confirm password")
 	public void user_enter_new_data_with_first_name_last_name_display_name_email_address_new_pass_and_confirm_pass() {
-		acc.enterNewAccountDetails("DEV", "COMP", "DEV COMP", "test_email@12taste.com", "test_email@12taste.com", "test_email@12taste.com",
+		acc.enterNewAccountDetails("Test", "Test", "Test", "test_email@12taste.com", "test_email@12taste.com", "test_email@12taste.com",
 				"test_email@taste.com");
 
 	}
@@ -97,7 +97,7 @@ public class AccountDetails extends BaseClass {
 
 	@When("User enter new data with first name,last name, display name, email address, new pass, and confirm pass")
 	public void user_enter_new_data_with_first_name_last_name_display_name_mail_address_new_pass_and_confirm_pass() {
-		acc.enterNewAccountDetails("DEV", "COMP", "DEV COMP", "test_email@12taste.com", "test_email@12taste.com", "",
+		acc.enterNewAccountDetails("Test", "Test", "Test", "test_email@12taste.com", "test_email@12taste.com", "",
 				"");
 	}
 

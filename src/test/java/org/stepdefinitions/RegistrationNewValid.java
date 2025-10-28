@@ -22,12 +22,12 @@ public class RegistrationNewValid extends BaseClass {
 
 	@When("the user enters as first name")
 	public void the_user_enters_as_first_name() {
-		newuser.enterFirstName("DEV");
+		newuser.enterFirstName("Test");
 	}
 
 	@When("the user enters last name")
 	public void the_user_enters_last_name() {
-		newuser.enterLastName("COMP");
+		newuser.enterLastName("Test");
 	}
 
 	@When("the user enters as email")

@@ -31,7 +31,7 @@ public class AddressManagementSteps extends BaseClass {
 
 	@When("User fills in the Billing Address fields with valid data")
 	public void user_fills_in_the_billing_address_fields_with_valid_data() {
-	addresspage.fillBillingAddress("DEV", "COMP", "DEV COMP", "Netherlands", "Nijmegen", "5th Block", "1000 AA", "Nijmegen", "+31 850027748", "test_email@12taste.com");
+	addresspage.fillBillingAddress("Test", "Test", "Test", "Netherlands", "Test", "Test", "1000 AA", "Test", "+31 850027748", "test_email@12taste.com");
 	}
 
 	@When("User clicks the Save Address button")
@@ -56,7 +56,7 @@ public class AddressManagementSteps extends BaseClass {
 
 	@When("User fills in the Shipping Address fields with valid data")
 	public void user_fills_in_the_shipping_address_fields_with_valid_data() {
-		addresspage.fillShippingAddress("DEV", "COMP","1-2 Taste.com", "Netherlands", "Nijyam", "5th block", "1000 AA", "Nijayam");
+		addresspage.fillShippingAddress("Test", "Test","Test", "Netherlands", "Test", "Test", "1000 AA", "Test");
 	}
 	
 	@Then("User should see the confirmation message")

@@ -47,7 +47,7 @@ public class Quote extends BaseClass {
 
 	@Then("User fill in the quote request form with valid details")
 	public void user_fill_in_the_quote_request_form_with_valid_details() {
-		quotepage.fillQuoteForm("Tester", "12taste", "Ramapuram", "1000 AA", "Nijmegan", "1-2 Taste", "test_email@12taste.com", "+31 85 00 277 48", "NL862572022B01", "Test");
+		quotepage.fillQuoteForm("Test", "Test", "Test", "1000 AA", "Test", "Test", "test_email@12taste.com", "+31 850027748", "NL862572022B01", "Test");
 	}
 
 	@Ignore
